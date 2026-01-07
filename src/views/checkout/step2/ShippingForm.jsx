@@ -1,5 +1,6 @@
 
-import { CustomInput, CustomMobileInput } from '@/components/formik';
+import CustomInput from '@/components/formik/CustomInput';
+import CustomMobileInput from '@/components/formik/CustomMobileInput';
 import { Field, useFormikContext } from 'formik';
 import React from 'react';
 import { displayMoney } from '@/helpers/utils';
