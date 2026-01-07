@@ -1,4 +1,4 @@
-// import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import { Boundary } from '@/components/common';
 import { CHECKOUT_STEP_1, CHECKOUT_STEP_3 } from '@/constants/routes';
 import { Form, Formik } from 'formik';
@@ -89,7 +89,7 @@ const ShippingDetails = ({ profile, shipping, subtotal }) => {
                     onClick={() => history.push(CHECKOUT_STEP_1)}
                     type="button"
                   >
-                    {/* <ArrowLeftOutlined /> */}
+                    <ArrowLeftOutlined />
                     &nbsp;
                     Go Back
                   </button>
@@ -99,7 +99,7 @@ const ShippingDetails = ({ profile, shipping, subtotal }) => {
                   >
                     Next Step
                     &nbsp;
-                    {/* <ArrowRightOutlined /> */}
+                    <ArrowRightOutlined />
                   </button>
                 </div>
               </Form>
