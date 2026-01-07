@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { setShippingDetails } from '@/redux/actions/checkoutActions';
 import * as Yup from 'yup';
-import { StepTracker } from '../components';
+import StepTracker from '../components/StepTracker';
 import withCheckout from '../hoc/withCheckout';
 import ShippingForm from './ShippingForm';
 import ShippingTotal from './ShippingTotal';
@@ -89,7 +89,7 @@ const ShippingDetails = ({ profile, shipping, subtotal }) => {
                     onClick={() => history.push(CHECKOUT_STEP_1)}
                     type="button"
                   >
-                    <ArrowLeftOutlined />
+                    {/* <ArrowLeftOutlined /> */}
                     &nbsp;
                     Go Back
                   </button>
@@ -99,7 +99,7 @@ const ShippingDetails = ({ profile, shipping, subtotal }) => {
                   >
                     Next Step
                     &nbsp;
-                    <ArrowRightOutlined />
+                    {/* <ArrowRightOutlined /> */}
                   </button>
                 </div>
               </Form>
