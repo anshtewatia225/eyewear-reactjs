@@ -1,0 +1,16 @@
+.loader {
+  width: 100%;
+  height: inherit;
+  background: $background-color-01;
+  position: relative;
+  padding: $m-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn .3s ease;
+
+  @include mobile {
+    min-height: 80vh;
+  }
+}
